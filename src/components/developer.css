@@ -1,6 +1,7 @@
 .dev-wrapper {
   border: 2px solid gray;
   display: inline-block;
+  width: 300px;
 }
 
 .dev-name {

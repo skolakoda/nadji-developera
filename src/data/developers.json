@@ -2,11 +2,51 @@
   {
     "name": "John Smith",
     "skills": "node.js, react, python",
-    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350"
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
   },
   {
     "name": "Petar Lebar",
     "skills": "node.js, angular, c, python",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/778A6506.jpg/320px-778A6506.jpg"
+    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
+  },
+  {
+    "name": "John Smith",
+    "skills": "node.js, react, python",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
+  },
+  {
+    "name": "Petar Lebar",
+    "skills": "node.js, angular, c, python",
+    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
+  },
+  {
+    "name": "John Smith",
+    "skills": "node.js, react, python",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
+  },
+  {
+    "name": "Petar Lebar",
+    "skills": "node.js, angular, c, python",
+    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
+  },
+  {
+    "name": "John Smith",
+    "skills": "node.js, react, python",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
+  },
+  {
+    "name": "Petar Lebar",
+    "skills": "node.js, angular, c, python",
+    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
+  },
+  {
+    "name": "John Smith",
+    "skills": "node.js, react, python",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
+  },
+  {
+    "name": "Petar Lebar",
+    "skills": "node.js, angular, c, python",
+    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
   }
 ]

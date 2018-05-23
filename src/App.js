@@ -17,11 +17,9 @@ class App extends Component {
           <h1 className="App-title">Nađi developera</h1>
         </header>
 
-        <p className="App-intro">
-          Dobrodošli u našu bazu developera.
-        </p>
-
-        {devList}
+        <div className="flex-wrapper">
+          {devList}
+        </div>
       </div>
 
     );
