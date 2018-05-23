@@ -1,0 +1,8 @@
+.dev-wrapper {
+  border: 2px solid gray;
+  display: inline-block;
+}
+
+.dev-name {
+  color: gray;
+}
