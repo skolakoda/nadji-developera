@@ -1,12 +1,22 @@
 [
   {
-    "name": "John Smith",
+    "name": "John Marić",
+    "skills": "node.js, vuejs, php",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
+  },
+  {
+    "name": "Vesna Dragić",
+    "skills": "node.js, react-native, c, python",
+    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
+  },
+  {
+    "name": "Johan Smith",
     "skills": "node.js, react, python",
     "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
   },
   {
-    "name": "Petra Lebar",
-    "skills": "node.js, angular, c, python",
+    "name": "Ana Lebar",
+    "skills": "go, angular, c, python",
     "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
   },
   {
@@ -16,37 +26,27 @@
   },
   {
     "name": "Petra Lebar",
-    "skills": "node.js, angular, c, python",
+    "skills": "haskell, angular, c, python",
     "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
   },
   {
     "name": "John Smith",
-    "skills": "node.js, react, python",
+    "skills": "node.js, react, javascript",
     "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
   },
   {
     "name": "Petra Lebar",
-    "skills": "node.js, angular, c, python",
+    "skills": "c++, node.js, angular, c, python",
     "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
   },
   {
-    "name": "John Smith",
-    "skills": "node.js, react, python",
+    "name": "Alan Smith",
+    "skills": "javascript, react, python",
     "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
   },
   {
-    "name": "Petra Lebar",
-    "skills": "node.js, angular, c, python",
-    "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
-  },
-  {
-    "name": "John Smith",
-    "skills": "node.js, react, python",
-    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350d"
-  },
-  {
-    "name": "Petra Lebar",
-    "skills": "node.js, angular, c, python",
+    "name": "Vera Marić",
+    "skills": "node.js, angular, c, php, laravel, python",
     "image": "https://timedotcom.files.wordpress.com/2017/12/wendy-walsh-person-of-year-2017-time-magazine-2.jpg?quality=10"
   }
 ]
