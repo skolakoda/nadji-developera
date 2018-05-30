@@ -8,7 +8,8 @@ class App extends Component {
     super(props)
     this.state = {
       loading: false,
-      developers: []
+      developers: [],
+      filtered: [],
     }
   }
 
@@ -18,12 +19,19 @@ class App extends Component {
     .then(data => data.json())
     .then(data => this.setState({
       developers: data,
+      filtered: data,
       loading: false
     }))
   }
 
+  filterDevelopers = e => {
+    const skill = e.target.value
+    const filtered = this.state.developers.filter(dev => dev.skills.includes(skill))
+    this.setState({filtered})
+  }
+
   render() {
-    const devList = this.state.developers.map((dev, i) => 
+    const devList = this.state.filtered.map((dev, i) => 
       <Developer name={dev.name} skills={dev.skills} image={dev.image} key={i} />
     )
     return (
@@ -31,6 +39,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Nađi developera</h1>
+          <input onChange={this.filterDevelopers} />
         </header>
 
         <div className="flex-wrapper">
