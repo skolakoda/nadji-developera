@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Header from './components/Header'
 import Developer from './components/Developer'
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -36,17 +36,12 @@ class App extends Component {
     )
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Nađi developera</h1>
-          <input onChange={this.filterDevelopers} />
-        </header>
-
+        <Header filterDevelopers={this.filterDevelopers} />
         <div className="flex-wrapper">
           {this.state.loading ? "Loading..." : devList}
         </div>
       </div>
-    );
+    )
   }
 }
 
