@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ loading: true })
     fetch('https://raw.githubusercontent.com/skolakoda/nadji-developera/master/src/data/developers.json')
     .then(data => data.json())
@@ -24,9 +24,7 @@ class App extends Component {
     }))
   }
 
-  filterDevelopers = e => {
-    const skill = e.target.value
-    const filtered = this.state.developers.filter(dev => dev.skills.includes(skill))
+  setFiltered = filtered => {
     this.setState({filtered})
   }
 
@@ -36,7 +34,7 @@ class App extends Component {
     )
     return (
       <div className="App">
-        <Header filterDevelopers={this.filterDevelopers} />
+        <Header developers={this.state.developers} setFiltered={this.setFiltered} />
         <div className="flex-wrapper">
           {this.state.loading ? "Loading..." : devList}
         </div>
