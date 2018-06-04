@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
-import Developer from './components/Developer'
+import MainScreen from './components/MainScreen'
 import './App.css';
 
 class App extends Component {
@@ -29,15 +29,11 @@ class App extends Component {
   }
 
   render() {
-    const devList = this.state.filtered.map((dev, i) => 
-      <Developer name={dev.name} skills={dev.skills} image={dev.image} key={i} />
-    )
+
     return (
       <div className="App">
         <Header developers={this.state.developers} setFiltered={this.setFiltered} />
-        <div className="flex-wrapper">
-          {this.state.loading ? "Loading..." : devList}
-        </div>
+        <MainScreen filtered={this.state.filtered} loading={this.state.loading} />
       </div>
     )
   }

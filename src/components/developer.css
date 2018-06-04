@@ -7,3 +7,7 @@
 .dev-name {
   color: gray;
 }
+
+.selected {
+  border: 2px solid red;
+}
