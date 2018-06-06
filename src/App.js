@@ -1,39 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
+import {store} from './store'
 import Header from './components/Header'
 import MainScreen from './components/MainScreen'
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      loading: false,
-      developers: [],
-      filtered: [],
-    }
-  }
-
   componentDidMount() {
-    this.setState({ loading: true })
+    store.dispatch({type: 'SET_LOADING', loading: true})
     fetch('https://raw.githubusercontent.com/skolakoda/nadji-developera/master/src/data/developers.json')
     .then(data => data.json())
-    .then(data => this.setState({
-      developers: data,
-      filtered: data,
-      loading: false
-    }))
-  }
-
-  setFiltered = filtered => {
-    this.setState({filtered})
+    .then(data => {
+      store.dispatch({type: 'SET_LOADING', loading: false})
+      store.dispatch({type: 'SET_DEVELOPERS', developers: data})
+      store.dispatch({type: 'SET_FILTERED', filtered: data})
+    })
   }
 
   render() {
-
     return (
       <div className="App">
-        <Header developers={this.state.developers} setFiltered={this.setFiltered} />
-        <MainScreen filtered={this.state.filtered} loading={this.state.loading} />
+        <Header />
+        <MainScreen />
       </div>
     )
   }

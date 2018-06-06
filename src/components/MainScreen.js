@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+
 import Developer from '../components/Developer'
 
 const MainScreen = props => {
@@ -12,4 +14,8 @@ const MainScreen = props => {
   )
 }
 
-export default MainScreen
+const mapStateToProps = ({filtered, loading}) => {
+  return {filtered, loading}
+}
+
+export default connect(mapStateToProps)(MainScreen)
