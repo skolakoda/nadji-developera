@@ -41,4 +41,9 @@ export const setFiltered = filtered => {
   }
 }
 
+export const filterDevelopers = skill => ({
+  type: 'FILTER_DEVELOPERS',
+  skill,
+})
+
 export const store = createStore(reducer)

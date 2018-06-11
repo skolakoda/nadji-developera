@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {setLoading, setDevelopers, setFiltered} from './store'
 import Header from './components/Header'
 import MainScreen from './components/MainScreen'
-import './App.css';
+import './App.css'
 
 class App extends Component {
   componentDidMount() {
