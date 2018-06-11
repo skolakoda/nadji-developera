@@ -29,12 +29,10 @@ export const setLoading = loading => {
   }
 }
 
-export const setDevelopers = developers => {
-  return {
-    type: 'SET_DEVELOPERS',
-    developers,
-  }
-}
+export const setDevelopers = developers => ({
+  type: 'SET_DEVELOPERS',
+  developers,
+})
 
 export const setFiltered = filtered => {
   return {
