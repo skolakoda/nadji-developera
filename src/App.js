@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
 
-import {store} from './store'
+import {setLoading, setDevelopers, setFiltered} from './store'
 import Header from './components/Header'
 import MainScreen from './components/MainScreen'
 import './App.css';
 
 class App extends Component {
   componentDidMount() {
-    store.dispatch({type: 'SET_LOADING', loading: true})
+    this.props.setLoading(true)
     fetch('https://raw.githubusercontent.com/skolakoda/nadji-developera/master/src/data/developers.json')
     .then(data => data.json())
     .then(data => {
-      store.dispatch({type: 'SET_LOADING', loading: false})
-      store.dispatch({type: 'SET_DEVELOPERS', developers: data})
-      store.dispatch({type: 'SET_FILTERED', filtered: data})
+      this.props.setLoading(false)
+      this.props.setDevelopers(data)
+      this.props.setFiltered(data)
     })
   }
 
@@ -27,4 +28,6 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = {setLoading, setDevelopers, setFiltered}
+
+export default connect(null, mapDispatchToProps)(App)

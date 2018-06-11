@@ -22,4 +22,25 @@ const reducer = (state = initialState, action) => {
   } 
 }
 
+export const setLoading = loading => {
+  return {
+    type: 'SET_LOADING',
+    loading,
+  }
+}
+
+export const setDevelopers = developers => {
+  return {
+    type: 'SET_DEVELOPERS',
+    developers,
+  }
+}
+
+export const setFiltered = filtered => {
+  return {
+    type: 'SET_FILTERED',
+    filtered,
+  }
+}
+
 export const store = createStore(reducer)
