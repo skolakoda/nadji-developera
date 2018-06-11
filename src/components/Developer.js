@@ -10,9 +10,7 @@ class Developer extends React.Component {
   }
 
   toggleSelected = () => {
-    console.log('click')
     this.setState({selected: !this.state.selected})
-    console.log(this.state.selected)
   }
 
   render() {
