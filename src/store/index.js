@@ -4,6 +4,7 @@ const initialState = {
   loading: false,
   developers: [],
   filtered: [],
+  selectedDeveloper: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -17,6 +18,8 @@ const reducer = (state = initialState, action) => {
     case 'FILTER_DEVELOPERS':
       const filtered = state.developers.filter(dev => dev.skills.includes(action.skill))
       return { ...state,  filtered}
+    case 'SELECT_DEVELOPER':
+      return { ...state,  selectedDeveloper: action.selectedDeveloper}
     default:
       return state
   } 
@@ -44,6 +47,11 @@ export const setFiltered = filtered => {
 export const filterDevelopers = skill => ({
   type: 'FILTER_DEVELOPERS',
   skill,
+})
+
+export const selectDeveloper = selectedDeveloper => ({
+  type: 'SELECT_DEVELOPER',
+  selectedDeveloper,
 })
 
 export const store = createStore(reducer)

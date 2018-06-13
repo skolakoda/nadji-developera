@@ -4,8 +4,8 @@ import {connect} from 'react-redux'
 import Developer from '../components/Developer'
 
 const MainScreen = props => {
-  const devList = props.filtered.map((dev, i) => 
-    <Developer name={dev.name} skills={dev.skills} image={dev.image} key={i} />
+  const devList = props.filtered.map(dev => 
+    <Developer dev={dev} key={dev.id} />
   )
   return (
     <div className="flex-wrapper">

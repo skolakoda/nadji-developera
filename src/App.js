@@ -9,7 +9,7 @@ import './App.css'
 class App extends Component {
   componentDidMount() {
     this.props.setLoading(true)
-    fetch('https://raw.githubusercontent.com/skolakoda/nadji-developera/master/src/data/developers.json')
+    fetch('https://raw.githubusercontent.com/skolakoda/nadji-developera/redux2/src/data/developers.json')
     .then(data => data.json())
     .then(data => {
       this.props.setLoading(false)
