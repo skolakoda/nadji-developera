@@ -1,5 +1,3 @@
-import {createStore} from 'redux'
-
 const initialState = {
   loading: false,
   developers: [],
@@ -7,7 +5,7 @@ const initialState = {
   selectedDeveloper: null
 }
 
-const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_LOADING':
       return { ...state, loading: action.loading }
@@ -54,4 +52,3 @@ export const selectDeveloper = selectedDeveloper => ({
   selectedDeveloper,
 })
 
-export const store = createStore(reducer)
