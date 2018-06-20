@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import {setLoading, setDevelopers, setFiltered} from './store/actions'
 import Header from './components/Header'
 import MainScreen from './components/MainScreen'
+import About from './components/About'
 import './App.css'
 
 class App extends Component {
@@ -21,8 +23,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <MainScreen />
+        <Router>
+          <div>
+          <Header />
+            <Route exact path="/" component={MainScreen} />
+            <Route path="/about" component={About} />
+          </div>
+        </Router>
       </div>
     )
   }
