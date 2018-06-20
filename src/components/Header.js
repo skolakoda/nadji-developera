@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import {filterDevelopers} from '../store'
+import {filterDevelopers} from '../store/actions'
 import logo from '../logo.svg';
 
 const Header = props => {

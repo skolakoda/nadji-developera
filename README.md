@@ -5,10 +5,9 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## TODO
 
-- da ne reaguje pretraga na string kraći od 2 slova
 - load more
-- upotrebiti id
 - router
+- da ne reaguje pretraga na string kraći od 2 slova
 
 ## Table of Contents
 

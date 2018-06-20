@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 
-import {setLoading, setDevelopers, setFiltered} from './store'
+import {setLoading, setDevelopers, setFiltered} from './store/actions'
 import Header from './components/Header'
 import MainScreen from './components/MainScreen'
 import './App.css'

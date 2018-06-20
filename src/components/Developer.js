@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import {selectDeveloper} from '../store'
+import {selectDeveloper} from '../store/actions'
 import './developer.css'
 
 class Developer extends React.Component {
