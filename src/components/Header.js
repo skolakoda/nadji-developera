@@ -15,7 +15,7 @@ const Header = props => {
         <NavLink replace={true} to="/">Home</NavLink>{' '}
         <NavLink to="/about">About</NavLink>
       </nav>
-      <input onChange={e => props.filterDevelopers(e.target.value)} />
+      Unesi veštinu: <input onChange={e => props.filterDevelopers(e.target.value)} />
       {props.selectedDeveloper && <span> Izabrali ste {props.selectedDeveloper.name}. <button>Kontaktiraj developera</button> </span>}
     </header>
   )
