@@ -2,7 +2,8 @@
   "name": "nadji-developera",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://skolakoda.github.io/nadji-developera",
+  "repository": "http://skolakoda.github.io/nadji-developera",
+  "homepage": "https://skolakoda.github.io/nadji-developera",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
